@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  /* font-size: calc(1rem + 0.1vw); */
+}
+
+body {
+  min-height: 100svh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.custom-shape-divider-bottom-1712250562 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1712250562 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 124px;
+}
+
+.custom-shape-divider-bottom-1712250562 .shape-fill {
+  fill: #ffffff;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease-in;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: rgba(210, 210, 210, 1);
+}
+
+input {
+  font-size: min(1rem, 16px);
+  padding: 4px 8px;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  width: min(80vw, 250px);
+}
+.reaction__container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2px;
+}
+.reaction__button {
+  background: transparent;
+  border: 1px solid #ccc;
+  padding: 2px;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.2);
+    box-shadow: 0px 4px 4px rgba(171, 171, 171, 0.432);
+  }
+}
+.emoji__counter {
+  position: relative;
+  display: grid;
+  place-content: center;
+  top: 0;
+  height: 12px;
+  width: 12px;
+  background: #fff;
+  color: #222;
+  transform: translateX(-100%);
+}
+.posts__container {
+  display: flex;
+  gap: 8px;
+  padding: 12px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: stretch;
+  max-width: 1100px;
+  position: relative;
+  margin: 0px auto;
+}
+
+#addNewPost {
+  width: 80px;
+  height: 80px;
+  border: none;
+  color: #fff;
+  font-size: 3rem;
+  position: fixed;
+  bottom: 12px;
+  right: 12px;
+  margin-left: 1.5rem;
+  z-index: 99;
+  cursor: pointer;
+  border-radius: 50%;
+  background: rgba(250, 103, 139, 1);
+  box-shadow: inset 4px 4px 8px rgb(255, 255, 255), inset -4px -4px 8px rgb(50, 50, 50), 4px 4px 8px rgba(100, 100, 100, 0.4);
+  transition: box-shadow 0.2s ease-in;
+}
+#addNewPost:hover {
+  box-shadow: inset -4px -4px 8px rgb(255, 255, 255), inset 4px 4px 8px rgb(50, 50, 50);
+}
+
+table {
+  width: 60vw;
+  position: relative;
+  margin: 24px auto;
+}
+thead tr {
+  background: rgba(250, 103, 139, 1);
+  color: #fff;
+}
+tr:nth-of-type(even) {
+  background: rgba(50, 50, 50, 0.1);
+}
