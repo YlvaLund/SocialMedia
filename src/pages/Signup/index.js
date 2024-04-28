@@ -1,9 +1,11 @@
 import React, { useRef } from "react";
 import Input from "../../components/Input";
 import Button from "../../components/Button";
+import { useNavigate } from "react-router-dom";
 import { registerUser } from "../../client/auth";
 
 export default function Signup() {
+  const navigate = useNavigate();
   const nameRef = useRef();
   const bannerRef = useRef();
   const avatarRef = useRef();
@@ -17,18 +19,28 @@ export default function Signup() {
         let email = emailRef.current.value;
         if (!email.includes("@stud.noroff.no")) {
           alert("You need to have a valid stud.noroff.no email to register");
+          return;
         }
         registerUser({ name: nameRef.current.value, email: email, banner: bannerRef.current.value, avatar: avatarRef.current.value, password: passwordRef.current.value }).then((res) => {
-          console.log(res);
           if (res.status === 201) {
             alert("! YOU ARE NOW REGISTERED !");
-            // Redirect to login?
+            setTimeout(navigate("/login"), 2500);
           } else {
             alert("Some error happend");
           }
         });
       }}
+      style={{
+        marginTop: "48px",
+        width: "fit-content",
+        position: "relative",
+        left: "50%",
+        transform: "translateX(-50%)",
+        border: "1px solid #ccc",
+        padding: "24px",
+      }}
     >
+      <h2 style={{ textAlign: "center", marginBottom: "12px" }}>SIGNUP</h2>
       <Input labelText={"Name"}>
         <input type={"text"} ref={nameRef} />
       </Input>

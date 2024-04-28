@@ -32,19 +32,19 @@ export default function Footer() {
       <div>Created by Ylva for Noroff Assignment</div>
       <ul>
         <li>
-          <Link>Gantt Chart</Link>
+          <Link to="https://github.com/users/YlvaLund/projects/1/views/4">Gantt Chart</Link>
         </li>
         <li>
-          <Link>Design Prototype & Style Guide</Link>
+          <Link to="https://xd.adobe.com/view/3b9aa8b1-96d8-4ddd-b73a-8e574d388a51-6ec9/grid/">Design Prototype & Style Guide</Link>
         </li>
         <li>
-          <Link>Project Kanban Board</Link>
+          <Link to="https://github.com/users/YlvaLund/projects/1">Project Kanban Board</Link>
         </li>
         <li>
-          <Link>Repository</Link>
+          <Link to="https://github.com/YlvaLund/SocialMedia">Repository</Link>
         </li>
         <li>
-          <Link>Hosted Demo</Link>
+          <Link to="https://noroff-socialmedia.netlify.app/">Hosted Demo</Link>
         </li>
       </ul>
     </FootContainer>

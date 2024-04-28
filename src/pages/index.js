@@ -17,6 +17,10 @@ export default function Page() {
       console.log(res);
       if (typeof res === "undefined") {
         setNeedsToLogin(true);
+      } else {
+        if (needsToLogin) {
+          setNeedsToLogin(false);
+        }
       }
     });
   });
