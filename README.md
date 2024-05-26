@@ -1,3 +1,58 @@
+# Social Media Client
+
+![image](https://ylvasportfolio.netlify.app/img/some.png)
+
+Social Media Platform project
+
+## Description
+
+Created a Social media platform to handle posts, likes, profiles, following and emojis as reactions.
+
+As a part of an Exam I was tasked to create a few different features and non-functional features.
+I chose to use React 18 and styled components.
+
+## Built With
+
+- [React.js](https://reactjs.org/)
+- [styled-components](https://styled-components.com/)
+
+## Getting Started
+
+### Installing
+
+This is where you list how to get the project started. It typically just includes telling a person to clone the repo and then to install the dependencies e.g.
+
+1. Clone the repo:
+
+```bash
+git clone https://github.com/YlvaLund/SocialMedia.git
+```
+
+2. Install the dependencies:
+
+```
+npm install
+```
+
+### Running
+
+To run the app, run the following commands:
+
+```bash
+npm start
+```
+
+## Contact
+
+[My Portfolio Page](https://ylvasportfolio.netlify.app/)
+
+[My LinkedIn page](www.linkedin.com)
+
+## Acknowledgments
+
+We have a few active students on the Noroff Discord forums, where they have helped me with support and easy conversations.
+
+
 # React project
 
 ## Plan
